@@ -2,7 +2,7 @@ const { Sequelize } = require("sequelize");
 
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: 'university.db'
+  storage: 'university.sqlite'
 });
 
 export default sequelize;
