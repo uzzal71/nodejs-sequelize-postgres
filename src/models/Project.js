@@ -20,7 +20,8 @@ const Project = sequelize.define('Project', {
     allowNull: false
   }
 }, {
-  tableName: 'projects'
+  tableName: 'projects',
+  timestamps: false
 });
 
 export default Project;

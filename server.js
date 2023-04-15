@@ -6,7 +6,7 @@ import Project from './src/models/Project';
 
 const PORT = process.env.PORT || 3000;
 
-Project.sync();
+Project.sync({ force: true });
 // Project.drop();
 
 connect()
