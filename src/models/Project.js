@@ -5,7 +5,8 @@ const Project = sequelize.define('Project', {
   // Model attributes are defined here
   title: {
     type: DataTypes.STRING,
-    allowNull: false
+    allowNull: false,
+    defaultValue: 'Payroll'
   },
   client: {
     type: DataTypes.STRING,
