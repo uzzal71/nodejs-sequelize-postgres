@@ -13,7 +13,8 @@ Service.init({
   }
 }, {
   sequelize,
-  modelName: 'Service'
+  modelName: 'Service',
+  tableName: 'services'
 });
 
 export default Service;
