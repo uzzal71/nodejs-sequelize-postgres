@@ -1,4 +1,4 @@
-import { Sequelize, DataTypes } from 'sequelize';
+import { DataTypes } from 'sequelize';
 import sequelize from '../config/sequelize';
 
 const Project = sequelize.define('Project', {
@@ -21,7 +21,9 @@ const Project = sequelize.define('Project', {
   }
 }, {
   tableName: 'projects',
-  timestamps: false
+  // timestamps: false,
+  createdAt: false,
+  updatedAt: true
 });
 
 export default Project;
