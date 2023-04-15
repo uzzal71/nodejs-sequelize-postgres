@@ -1,13 +1,14 @@
 import 'dotenv/config';
 import app from './app';
 import connect from './db';
-import sequelize from './src/config/sequelize';
-import Project from './src/models/Project';
+import Service from './src/models/Service';
 
 const PORT = process.env.PORT || 3000;
 
-Project.sync({ force: true });
+// Project.sync({ force: true });
 // Project.drop();
+
+Service.sync({ force: true })
 
 connect()
     .then(() => {

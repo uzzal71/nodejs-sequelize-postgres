@@ -1,14 +1,19 @@
-import { DataTypes, Sequelize } from 'sequelize';
-const sequelize = new Sequelize('sqlite::memory:');
+import { DataTypes, Model } from 'sequelize';
+import sequelize from '../config/sequelize';
 
-const Service = sequelize.define('Service', {
-  // Model attributes are defined here
-  title: {
+class Service extends Model {}
+
+Service.init({
+  firstName: {
     type: DataTypes.STRING,
     allowNull: false
+  },
+  lastName: {
+    type: DataTypes.STRING
   }
 }, {
-  // Other model options go here
+  sequelize,
+  modelName: 'Service'
 });
 
 export default Service;
