@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 3000;
 // Project.sync({ force: true });
 // Project.drop();
 
-Service.sync({ force: true })
+// Service.sync({ force: true })
+// Service.drop();
 
 connect()
     .then(() => {
