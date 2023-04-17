@@ -23,6 +23,14 @@ User.init({
     email: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    emailVerifiedAt: {
+        type: DataTypes.DATE,
+        allowNull: true
+    },
+    phoneVerifiedAt: {
+        type: DataTypes.DATE,
+        allowNull: true
     }
 }, {
     sequelize
