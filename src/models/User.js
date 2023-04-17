@@ -46,7 +46,8 @@ User.init({
         defaultValue: 'customer'
     },
     state: {
-        
+        type: DataTypes.ENUM('phone_not_verified', 'email_not_verified', 'active'),
+        defaultValue: 'phone_not_verified'
     }
 }, {
     sequelize
