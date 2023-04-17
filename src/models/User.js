@@ -31,6 +31,10 @@ User.init({
     phoneVerifiedAt: {
         type: DataTypes.DATE,
         allowNull: true
+    },
+    verified_code: {
+        type: DataTypes.STRING,
+        allowNull: true
     }
 }, {
     sequelize
