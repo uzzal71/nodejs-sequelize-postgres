@@ -35,6 +35,11 @@ User.init({
     verified_code: {
         type: DataTypes.STRING,
         allowNull: true
+    },
+    avater: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        defaultValue: 'default.png'
     }
 }, {
     sequelize
