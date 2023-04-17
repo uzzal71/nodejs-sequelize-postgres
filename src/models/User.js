@@ -40,6 +40,13 @@ User.init({
         type: DataTypes.STRING,
         allowNull: true,
         defaultValue: 'default.png'
+    },
+    type: {
+        type: DataTypes.ENUM('user', 'admin'),
+        defaultValue: 'customer'
+    },
+    state: {
+        
     }
 }, {
     sequelize
