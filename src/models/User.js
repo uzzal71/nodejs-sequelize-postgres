@@ -36,11 +36,6 @@ User.init({
         type: DataTypes.STRING,
         allowNull: true
     },
-    avater: {
-        type: DataTypes.STRING,
-        allowNull: true,
-        defaultValue: 'default.png'
-    },
     type: {
         type: DataTypes.ENUM('user', 'admin'),
         defaultValue: 'customer'
@@ -48,6 +43,19 @@ User.init({
     state: {
         type: DataTypes.ENUM('phone_not_verified', 'email_not_verified', 'active'),
         defaultValue: 'phone_not_verified'
+    },
+    status: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+    },
+    avater: {
+        type: DataTypes.STRING,
+        allowNull: true,
+        defaultValue: 'default.png'
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 }, {
     sequelize
