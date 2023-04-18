@@ -6,6 +6,10 @@ const Post = sequelize.define("Post", {
     user_id: {
         type: DataTypes.NUMBER,
         allowNull: false,
+        references: {
+            model: User,
+            key: 'id'
+        }
     }
 });
 
