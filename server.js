@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 3000;
 // Contact.sync({ force: true });
 // Contact.drop();
 
-User.sync();
+// User.sync();
+User.drop();
 
 connect()
     .then(() => {
