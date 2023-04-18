@@ -1,5 +1,6 @@
-import { Model, DataType, DataTypes } from "sequelize";
+import { DataTypes, Model } from "sequelize";
 import sequelize from "../config/sequelize";
+import Post from "./Post";
 
 class User extends Model {};
 
@@ -61,6 +62,11 @@ User.init({
     sequelize,
     tableName: 'users',
     timestamps: true
+});
+
+User.hasMany(Post, {
+    onDelete: 'CASCADE',
+    onUpdate: 'CASCADE'
 });
 
 export default User;
