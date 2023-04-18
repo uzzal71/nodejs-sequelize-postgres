@@ -3,6 +3,7 @@ import app from './app';
 import connect from './db';
 import Service from './src/models/Service';
 import Contact from './src/models/Contact';
+import User from './src/models/User';
 
 const PORT = process.env.PORT || 3000;
 
@@ -14,6 +15,8 @@ const PORT = process.env.PORT || 3000;
 
 // Contact.sync({ force: true });
 // Contact.drop();
+
+User.sync({ force: true });
 
 connect()
     .then(() => {
