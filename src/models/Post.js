@@ -10,6 +10,10 @@ const Post = sequelize.define("Post", {
             model: User,
             key: 'id'
         }
+    },
+    title: {
+       type: DataTypes.STRING,
+       allowNull: false
     }
 });
 
