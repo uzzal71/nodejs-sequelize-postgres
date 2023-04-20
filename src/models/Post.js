@@ -23,7 +23,11 @@ const Post = sequelize.define("Post", {
        type: DataTypes.STRING,
        defaultValue: 'default.png'
     }
-});
+},
+{
+    timestamps: true
+}
+);
 
 Post.belongsTo(User, {
     foreignKey: 'user_id'
