@@ -14,6 +14,10 @@ const Post = sequelize.define("Post", {
     title: {
        type: DataTypes.STRING,
        allowNull: false
+    },
+    description: {
+       type: DatazTypes.STRING,
+       allowNull: false
     }
 });
 
