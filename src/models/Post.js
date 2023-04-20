@@ -18,6 +18,10 @@ const Post = sequelize.define("Post", {
     description: {
        type: DatazTypes.STRING,
        allowNull: false
+    },
+    image: {
+       type: DataTypes.STRING,
+       defaultValue: 'default.png'
     }
 });
 
