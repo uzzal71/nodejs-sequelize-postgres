@@ -11,6 +11,10 @@ const Post = sequelize.define("Post", {
             key: 'id'
         }
     },
+    category_id: {
+       type: DataTypes.STRING,
+       allowNull: false
+    },
     title: {
        type: DataTypes.STRING,
        allowNull: false
