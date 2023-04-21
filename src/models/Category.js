@@ -1,4 +1,4 @@
 // Category model
 import { DataTypes } from 'sequelize';
-import sequelize from '../db';
+import sequelize from '../config/sequelize';
 
