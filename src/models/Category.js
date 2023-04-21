@@ -10,6 +10,10 @@ const Category = sequelize.define('Category', {
      slug: {
         type: DataTypes.STRING,
         allowNull: false
+     },
+     image: {
+        type: DataTypes.STRING,
+        defaultValue: 'default.png'
      }
 },
 {
