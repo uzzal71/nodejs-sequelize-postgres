@@ -1,2 +1,2 @@
 // Brand model
-import { DataTypes } from 'sequelize'
+import { DataTypes, Model } from 'sequelize'
