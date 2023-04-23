@@ -12,6 +12,10 @@ Brand.init({
     slug: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    status: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: true
     }
 },
 {
