@@ -7,6 +7,7 @@ Class Brand extends Model {}
 Brand.init({},
 {
     sequelize,
+    tableName: 'brands'
     timestamps: true
 }
 );
