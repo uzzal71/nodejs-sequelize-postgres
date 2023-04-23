@@ -7,5 +7,6 @@ Class Brand extends Model {}
 Brand.init({},
 {
     sequelize,
+    timestamps: true
 }
 );
