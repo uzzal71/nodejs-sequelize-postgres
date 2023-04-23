@@ -8,6 +8,10 @@ Brand.init({
     name: {
         type: DataTypes.STRING',
         allowNull: false
+    },
+    slug: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 },
 {
