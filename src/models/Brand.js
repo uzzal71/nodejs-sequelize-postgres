@@ -4,4 +4,8 @@ import sequelize from './config/sequelize'
 
 Class Brand extends Model {}
 
-Brand.init({});
+Brand.init({},
+{
+    sequelize,
+}
+);
