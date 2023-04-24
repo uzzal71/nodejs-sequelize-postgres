@@ -22,6 +22,10 @@ const Product = sequelize.define({
       price: {
           type: DataTypes.DOUBLE,
           defaultValue: 0.00
+      },
+      discount: {
+         type: DataTypes.DOUBLE,
+         defaultValue: 0.00
       }
 },{
       tableName: 'products',
