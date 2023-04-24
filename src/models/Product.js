@@ -18,6 +18,10 @@ const Product = sequelize.define({
       slug: {
           type: DataTypes.STRING,
           allowNull: false
+      },
+      price: {
+          type: DataTypes.DOUBLE,
+          defaultValue: 0.00
       }
 },{
       tableName: 'products',
