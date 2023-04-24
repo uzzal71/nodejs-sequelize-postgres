@@ -7,6 +7,10 @@ const Post = sequelize.define({
           type: DataTypes.STRING,
           allowNull: false
       },
+      brand_id: {
+          type: DataTypes.STRING,
+          allowNull: false 
+      },
       name: {
           type: DataTypes.STRING,
           allowNull: false 
