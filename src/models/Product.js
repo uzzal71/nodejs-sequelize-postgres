@@ -23,3 +23,5 @@ const Product = sequelize.define({
       tableName: 'products',
       timestamps: true
 });
+
+export default Product;
