@@ -2,7 +2,7 @@
 import { DataTypes } from 'sequelize';
 import sequelize from './config/sequelize';
 
-const Post = sequelize.define({
+const Product = sequelize.define({
       category_id: {
           type: DataTypes.STRING,
           allowNull: false
