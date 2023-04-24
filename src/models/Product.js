@@ -3,5 +3,6 @@ import { DataTypes } from 'sequelize';
 import sequelize from './config/sequelize';
 
 const Post = sequelize.define({},{
-      tableName: 'products'
+      tableName: 'products',
+      timestamps: true
 });
