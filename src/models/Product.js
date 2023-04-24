@@ -6,6 +6,10 @@ const Post = sequelize.define({
       name: {
           type: DataTypes.STRING,
           allowNull: false 
+      },
+      slug: {
+          type: DataTypes.STRING,
+          allowNull: false
       }
 },{
       tableName: 'products',
