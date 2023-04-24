@@ -3,6 +3,10 @@ import { DataTypes } from 'sequelize';
 import sequelize from './config/sequelize';
 
 const Post = sequelize.define({
+      category_id: {
+          type: DataTypes.STRING,
+          allowNull: false
+      },
       name: {
           type: DataTypes.STRING,
           allowNull: false 
