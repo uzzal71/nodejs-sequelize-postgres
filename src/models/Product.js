@@ -50,6 +50,10 @@ const Product = sequelize.define({
       is_active: {
          type: DataTypes.BOOLEAN,
          defaultValue: true
+      },
+      deletedAt: {
+         type: DataTypes.DATETIME,
+         allowNull: true
       }
 },{
       tableName: 'products',
