@@ -34,6 +34,10 @@ const Product = sequelize.define({
       discription: {
          type: DataTypes.TEXT,
          allowNull: true
+      },
+      tags: {
+         type: DataTypes.STRING,
+         allowNull: true
       }
 },{
       tableName: 'products',
