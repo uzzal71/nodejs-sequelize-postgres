@@ -40,7 +40,7 @@ const Product = sequelize.define({
          allowNull: true
       },
       is_published: {
-         type: DataTypes.STRING,
+         type: DataTypes.BOOLEAN,
          defaultValue: false
       },
       is_views: {
