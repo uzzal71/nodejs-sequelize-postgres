@@ -42,6 +42,10 @@ const Product = sequelize.define({
       is_published: {
          type: DataTypes.STRING,
          defaultValue: false
+      },
+      is_views: {
+         type: DataTypes.NUMBER,
+         defaultValue: 0
       }
 },{
       tableName: 'products',
