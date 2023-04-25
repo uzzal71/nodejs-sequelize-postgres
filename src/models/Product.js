@@ -46,6 +46,10 @@ const Product = sequelize.define({
       is_views: {
          type: DataTypes.NUMBER,
          defaultValue: 0
+      },
+      is_active: {
+         type: DataTypes.BOOLEAN,
+         defaultValue: true
       }
 },{
       tableName: 'products',
@@ -53,3 +57,4 @@ const Product = sequelize.define({
 });
 
 export default Product;
+   
