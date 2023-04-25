@@ -30,6 +30,10 @@ const Product = sequelize.define({
       discount_type: {
          type: DataTypes.ENUM('amount', 'percent'),
          defaultValue: 'amount'
+      },
+      discription: {
+         type: DataTypes.TEXT,
+         allowNull: true
       }
 },{
       tableName: 'products',
