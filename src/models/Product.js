@@ -38,6 +38,10 @@ const Product = sequelize.define({
       tags: {
          type: DataTypes.STRING,
          allowNull: true
+      },
+      is_published: {
+         type: DataTypes.STRING,
+         defaultValue: false
       }
 },{
       tableName: 'products',
