@@ -43,6 +43,10 @@ const Product = sequelize.define({
          type: DataTypes.STRING,
          allowNull: true
       },
+      thumbnail: {
+         type: DataTypes.STRING,
+         allowNull: false
+      },
       is_published: {
          type: DataTypes.BOOLEAN,
          defaultValue: false
