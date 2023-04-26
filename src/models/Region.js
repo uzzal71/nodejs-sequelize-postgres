@@ -10,7 +10,8 @@ Region.init({
         allowNull: false
     }
 }, {
-    sequelize
+    sequelize,
+    tableName: 'regions'
 });
 
 export default Region;
