@@ -9,6 +9,8 @@ Region.init({
         type: DataTypes.STRING,
         allowNull: false
     }
-}, {});
+}, {
+    sequelize
+});
 
 export default Region;
