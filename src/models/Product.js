@@ -31,6 +31,10 @@ const Product = sequelize.define({
          type: DataTypes.ENUM('amount', 'percent'),
          defaultValue: 'amount'
       },
+      short_description: {
+         type: DataTypes.TEXT,
+         allowNull: false 
+      },
       discription: {
          type: DataTypes.TEXT,
          allowNull: true
