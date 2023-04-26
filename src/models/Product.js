@@ -35,7 +35,7 @@ const Product = sequelize.define({
          type: DataTypes.TEXT,
          allowNull: false 
       },
-      discription: {
+      description: {
          type: DataTypes.TEXT,
          allowNull: true
       },
