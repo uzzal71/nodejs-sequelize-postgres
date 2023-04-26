@@ -35,6 +35,10 @@ const Product = sequelize.define({
          type: DataTypes.DOUBLE,
          defaultValue: 0.00
       },
+      tax_type: {
+         type: DataTypes.ENUM('amount', 'percent'),
+         defaultValue: 'amount'
+      },
       short_description: {
          type: DataTypes.TEXT,
          allowNull: false 
