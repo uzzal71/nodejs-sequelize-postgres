@@ -4,6 +4,11 @@ import sequelize from './config/sequelize';
 
 class Region extends Model {};
 
-Region.init({}, {});
+Region.init({
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
+}, {});
 
 export default Region;
