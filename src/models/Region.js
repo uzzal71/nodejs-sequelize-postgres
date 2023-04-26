@@ -12,6 +12,10 @@ Region.init({
     slug: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    currency_id: {
+        type: DataTypes.NUMBER,
+        defaultValue: 1
     }
 }, {
     sequelize,
