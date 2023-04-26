@@ -11,7 +11,8 @@ Region.init({
     }
 }, {
     sequelize,
-    tableName: 'regions'
+    tableName: 'regions',
+    timestamps: true
 });
 
 export default Region;
