@@ -55,6 +55,10 @@ const Product = sequelize.define({
          type: DataTypes.STRING,
          allowNull: true
       },
+      meta_description: {
+         type: DataTypes.STRING,
+         allowNull: true
+      },
       is_published: {
          type: DataTypes.BOOLEAN,
          defaultValue: false
