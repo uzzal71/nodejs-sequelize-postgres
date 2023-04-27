@@ -16,7 +16,7 @@ const Category = sequelize.define('Category', {
         defaultValue: 'default.png'
      },
      status: {
-        type: DataTypes.BOOLEAN
+        type: DataTypes.BOOLEAN,
         defaultValue: true
      }
 },
@@ -25,3 +25,5 @@ const Category = sequelize.define('Category', {
      tableName: 'categories'
 }
 );
+
+export default Category;
