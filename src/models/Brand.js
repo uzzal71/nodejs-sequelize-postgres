@@ -6,7 +6,7 @@ class Brand extends Model {}
 
 Brand.init({
     name: {
-        type: DataTypes.STRING',
+        type: DataTypes.STRING,
         allowNull: false
     },
     slug: {
@@ -24,3 +24,5 @@ Brand.init({
     timestamps: true
 }
 );
+
+
