@@ -1,8 +1,8 @@
 // Product Model
 import { DataTypes } from 'sequelize';
-import sequelize from './config/sequelize';
+import sequelize from "../config/sequelize";
 
-const Product = sequelize.define({
+const Product = sequelize.define('Product', {
       category_id: {
           type: DataTypes.STRING,
           allowNull: false
