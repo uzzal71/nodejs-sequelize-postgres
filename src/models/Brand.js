@@ -1,8 +1,8 @@
 // Brand model
-import { DataTypes, Model } from 'sequelize'
-import sequelize from './config/sequelize'
+import { DataTypes, Model } from 'sequelize';
+import sequelize from './config/sequelize';
 
-Class Brand extends Model {}
+class Brand extends Model {}
 
 Brand.init({
     name: {
@@ -20,7 +20,7 @@ Brand.init({
 },
 {
     sequelize,
-    tableName: 'brands'
+    tableName: 'brands',
     timestamps: true
 }
 );
