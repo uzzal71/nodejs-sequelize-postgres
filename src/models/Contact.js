@@ -12,7 +12,7 @@ const Contact = sequelize.define('Contact', {
         allowNull: false
     }
 }, {
-    // Other model options go here
+    tableName: 'contacts'
 });
 
 export default Contact;
