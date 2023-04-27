@@ -25,4 +25,4 @@ Brand.init({
 }
 );
 
-
+export default Brand;
