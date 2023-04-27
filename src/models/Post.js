@@ -42,7 +42,7 @@ const Post = sequelize.define("Post", {
 },
 {
     timestamps: true,
-    tableNaame: 'podts'
+    tableNaame: 'posts'
 }
 );
 
