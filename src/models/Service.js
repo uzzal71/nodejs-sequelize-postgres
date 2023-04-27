@@ -14,7 +14,8 @@ Service.init({
 }, {
   sequelize,
   modelName: 'Service',
-  tableName: 'services'
+  tableName: 'services',
+  timestamps: true
 });
 
 export default Service;
