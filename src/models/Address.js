@@ -10,6 +10,10 @@ const Address = sequelize.define('Address', {
     name: {
         type: DataTypes.STRING,
         allowNull: false
+    },
+    phone: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 });
 
