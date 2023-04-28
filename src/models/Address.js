@@ -6,7 +6,10 @@ const Address = sequelize.define('Address', {
         type: DataTypes.INTEGER,
         references: 'users',
         referencesKay: 'id'
-        
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 });
 
